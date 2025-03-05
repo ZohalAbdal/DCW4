@@ -2,9 +2,14 @@
 # coding: utf-8
 
 # In[27]:
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[27]:
 import streamlit as st
 import requests
 import pandas as pd
+import plotly.express as px
 from io import StringIO
 
 # Streamlit titel
@@ -103,6 +108,3 @@ if 'pier' in df.columns:
     fig_pier = px.pie(df_pier_count, names='Pier', values='Aantal Vluchten', 
                       title="Verdeling Vluchten per Pier", color_discrete_sequence=px.colors.qualitative.Set3)
     st.plotly_chart(fig_pier)
-
-
-# %%
