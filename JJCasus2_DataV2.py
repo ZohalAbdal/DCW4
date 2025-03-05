@@ -5,7 +5,6 @@
 import streamlit as st
 import requests
 import pandas as pd
-import plotly.express as px
 from io import StringIO
 
 # Streamlit titel
@@ -105,3 +104,5 @@ if 'pier' in df.columns:
                       title="Verdeling Vluchten per Pier", color_discrete_sequence=px.colors.qualitative.Set3)
     st.plotly_chart(fig_pier)
 
+
+# %%
